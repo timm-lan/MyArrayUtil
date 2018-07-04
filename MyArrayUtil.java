@@ -13,7 +13,7 @@ public class MyArrayUtil {
         n = aSubArray.length;
         int[][] ret = new int[m][n];
         for (int i = 0; i < subArrays.length; i++) {
-            String[] subArray = subArrays[i].split(",\\s*");
+            String[] subArray = subArrays[i].split("\\s*,\\s*");
             for (int j = 0; j < n; j++) {
                 ret[i][j] = Integer.parseInt(subArray[j]);
             }
